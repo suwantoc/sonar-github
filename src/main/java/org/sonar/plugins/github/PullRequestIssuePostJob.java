@@ -66,7 +66,7 @@ public class PullRequestIssuePostJob implements org.sonar.api.batch.PostJob, Che
 
     updateReviewComments(commentsToBeAddedByLine);
 
-    pullRequestFacade.deleteOutdatedComments();
+    //pullRequestFacade.deleteOutdatedComments();
 
     pullRequestFacade.createOrUpdateGlobalComments(report.hasNewIssue() ? report.formatForMarkdown() : null);
 
